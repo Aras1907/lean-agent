@@ -57,11 +57,11 @@ Coding agents often call functions, flags, and options that don't exist. Before 
 
 After each significant edit, run the project's checks, fastest first:
 
-1. Formatter and linter (ESLint, Ruff, golangci-lint, Clippy...)
-2. Type checker (tsc, mypy, pyright...)
+1. Formatter and linter, such as ESLint, Ruff, golangci-lint, or Clippy
+2. Type checker, such as tsc, mypy, or pyright
 3. Tests for the code you changed, then the full suite
 4. Build
-5. Security checks, if the repo already uses them (`npm audit`, `pip-audit`, `cargo audit`, Semgrep...)
+5. Security checks, if the repo already uses them, such as `npm audit`, `pip-audit`, `cargo audit`, or Semgrep
 
 The commands are usually in the CI config, `Makefile`, `package.json`, `pyproject.toml`, or the README. Use the tools the project has and don't add new ones without asking.
 
@@ -77,7 +77,7 @@ For a bug, reproduce it first, ideally with a failing test. Then fix it and show
 
 Read your diff as a strict reviewer would, and ask:
 
-- Does it meet every condition you wrote in step 4? Read the user's original request again; in a long session the first instructions are the ones that get lost.
+- Does it meet every condition you wrote in step 4? Read the user's original request again. In a long session, the first instructions are the easiest to forget.
 - Did you handle the edge cases you listed?
 - Does the diff contain anything the user didn't ask for, such as extra features, files, refactors, debug prints, or commented-out code? Remove it.
 - Is there a security problem: injection, path traversal, secrets in code or logs, unsafe deserialization, or a missing permission check?

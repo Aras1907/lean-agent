@@ -1,7 +1,7 @@
 # mini-claude
 
 > [!WARNING]
-> These skills are in a testing phase and no results are guaranteed. A skill only changes the instructions an agent works from; the model behind it stays the same, so the effect depends on your tool and model. Review everything the agent produces.
+> These skills are in a testing phase and no results are guaranteed. A skill only changes the instructions an agent works from. The model behind it stays the same, so the effect depends on your tool and model. Review everything the agent produces.
 
 Two skills that teach other AI coding tools the working habits of Claude Code.
 

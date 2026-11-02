@@ -12,7 +12,7 @@ These rules work in any agent that can read files, edit files, and run commands.
 - Read the code you will change and the code around it: its callers, tests, config, and exports. Don't edit a file you haven't read in this session.
 - Before changing a function's signature or behavior, search for every caller. If the bug is in shared code, fix it there once instead of patching each call site.
 - Follow the codebase's existing naming, error handling, test framework, folder layout, and helpers. If the code already does something one way, don't add a second way.
-- Check the dependency manifest (`package.json`, `pyproject.toml`, `go.mod`, `Cargo.toml`...) before assuming a library is installed. If you aren't sure an API exists, read its source or docs instead of guessing.
+- Check the dependency manifest (such as `package.json`, `pyproject.toml`, `go.mod`, or `Cargo.toml`) before assuming a library is installed. If you aren't sure an API exists, read its source or docs instead of guessing.
 
 ## 2. Decide the scope
 
