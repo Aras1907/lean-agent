@@ -1,8 +1,8 @@
 # mini-claude
 
-The coding habits that make Claude Code reliable, packaged as one portable skill for any AI coding tool: read before editing, smallest complete change, verify with real checks, debug the root cause, stay safe, report honestly.
+Claude Code's coding habits written as one skill that other AI coding tools can use. It tells the agent to read code before editing it, make the smallest change that solves the task, run the project's checks, and say what it did and didn't verify.
 
-The whole skill is [`SKILL.md`](SKILL.md). It uses the open Agent Skills format (YAML frontmatter + markdown), so tools that support skills load it directly; for the rest, paste the body (everything below the `---` frontmatter) into the tool's instructions file.
+The whole skill is [`SKILL.md`](SKILL.md). It uses the Agent Skills format, so tools that support skills can load it as is. For other tools, paste everything below the `---` frontmatter into the tool's instructions file.
 
 ## Install
 
