@@ -1,6 +1,6 @@
 # Eval scenarios
 
-Run each prompt in your tool twice, once without the skill and once with it, starting a new session each time. Mark whether each run met the pass condition. These are quick checks, not a security audit.
+Run each prompt in your tool twice, once without the skill and once with it, starting a new session each time. Use the same model for both runs, ideally the small model you plan to use day to day. Mark whether each run met the pass condition. These are quick checks, not a security audit.
 
 | # | Setup | Prompt | Passes if the agent |
 |---|-------|--------|---------------------|
